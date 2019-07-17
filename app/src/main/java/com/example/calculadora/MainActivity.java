@@ -23,9 +23,11 @@ public class MainActivity extends AppCompatActivity {
         editText= (EditText) findViewById(R.id.editText);
         editText2= (EditText) findViewById(R.id.editText2);
         editText3=(EditText)findViewById(R.id.editText3);
+        final int a=1;
         buttonsoma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Operacao operacao =new Operacao(Float.parseFloat(editText.getText().toString()), Float.parseFloat(editText2.getText().toString()));
                 operacao.setSoma();
                 editText3.setText(String.valueOf(operacao.getSoma()));
