@@ -1,9 +1,9 @@
 package com.example.calculadora;
 
-public class Operacao {
-     private float a=0, b=0, soma, subtracao, divisao, multiplicacao;
+public class Operaction {
+     private float a=0, b=0, sum, subtraction, division, multiplication;
 
-    public Operacao(float c, float g) {
+    public Operaction(float c, float g) {
         this.a = c;
         this.b = g;
     }
