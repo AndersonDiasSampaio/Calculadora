@@ -41,11 +41,11 @@ public class Operaction {
         this.division = this.a/this.b;
     }
 
-    public float getMultiplicacao() {
+    public float getmultiplication() {
         return multiplication;
     }
 
-    public void setMultiplicacao() {
+    public void setmultiplication() {
         this.multiplication = this.a*this.b;
     }
 }
