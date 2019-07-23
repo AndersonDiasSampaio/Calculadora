@@ -12,11 +12,9 @@ public class Operaction {
         return a;
     }
 
-
     public float getB() {
         return b;
     }
-
 
     public float getSoma() {
         return soma;
