@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Operacao operacao =new Operacao(Float.parseFloat(editText.getText().toString()), Float.parseFloat(editText2.getText().toString()));
+                Operaction operacao =new Operaction(Float.parseFloat(editText.getText().toString()), Float.parseFloat(editText2.getText().toString()));
                 operacao.setSum();
-                editText3.setText(String.valueOf(operacao.getSoma()));
+                editText3.setText(String.valueOf(operacao.getSum()));
 
             }
         });
@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
         buttonsubtrai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Operacao operacao =new Operacao(Float.parseFloat(editText.getText().toString()), Float.parseFloat(editText2.getText().toString()));
-                operacao.setSubtracao();
-                editText3.setText(String.valueOf(operacao.getSubtracao()));
+                Operaction operacao =new Operaction(Float.parseFloat(editText.getText().toString()), Float.parseFloat(editText2.getText().toString()));
+                operacao.setSubtraction();
+                editText3.setText(String.valueOf(operacao.getSubtraction()));
 
             }
         });
@@ -48,18 +48,18 @@ public class MainActivity extends AppCompatActivity {
         buttonmultiplica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Operacao operacao =new Operacao(Float.parseFloat(editText.getText().toString()), Float.parseFloat(editText2.getText().toString()));
-                operacao.setMultiplicacao();
-                editText3.setText(String.valueOf(operacao.getMultiplicacao()));
+                Operaction operacao =new Operaction(Float.parseFloat(editText.getText().toString()), Float.parseFloat(editText2.getText().toString()));
+                operacao.setmultiplication();
+                editText3.setText(String.valueOf(operacao.getmultiplication()));
             }
         });
 
         buttondivide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Operacao operacao =new Operacao(Float.parseFloat(editText.getText().toString()), Float.parseFloat(editText2.getText().toString()));
-                operacao.setDivisao();
-                editText3.setText(String.valueOf(operacao.getDivisao()));
+                Operaction operacao =new Operaction(Float.parseFloat(editText.getText().toString()), Float.parseFloat(editText2.getText().toString()));
+                operacao.setDivision();
+                editText3.setText(String.valueOf(operacao.getDivision()));
 
             }
         });
