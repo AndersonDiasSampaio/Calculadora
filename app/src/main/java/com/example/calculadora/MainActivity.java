@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Operacao operacao =new Operacao(Float.parseFloat(editText.getText().toString()), Float.parseFloat(editText2.getText().toString()));
-                operacao.setSoma();
+                operacao.setSum();
                 editText3.setText(String.valueOf(operacao.getSoma()));
 
             }
